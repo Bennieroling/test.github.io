@@ -1,0 +1,170 @@
+<html>
+    <script type="text/javascript" charset="utf-8">
+        (function (g, e, n, es, ys) {
+          g['_genesysJs'] = e;
+          g[e] = g[e] || function () {
+            (g[e].q = g[e].q || []).push(arguments)
+          };
+          g[e].t = 1 * new Date();
+          g[e].c = es;
+          ys = document.createElement('script'); ys.async = 1; ys.src = n; ys.charset = 'utf-8'; document.head.appendChild(ys);
+        })(window, 'Genesys', 'https://apps.mypurecloud.com/genesys-bootstrap/genesys.min.js', {
+          environment: 'use1',
+          deploymentId: '0e52d3b8-eece-4a31-933f-b27182d52fbf'
+        });
+      </script>
+    <head>
+        <title>Omni-channel test</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+   <div class="main">
+       <nav>
+           <div class="logo">
+               <img src="images/index.png">
+           </div>
+           <div class="nav-links">
+               <ul>
+                   <li><a href="https://wa.me/442895950083?text=Hi!%20I'm%20interested%20in%20more%20information%20about%20your%20services">WhatsApp</a></li>                   
+                   <li><a href="#">WebChat</a></li>
+                   <li><a href="#">Others</a></li>
+               </ul>
+           </div>
+       </nav>
+
+       <div class="information">
+           <div class="overlay"></div>
+           <img src="images/mobile.png" class="mobile">
+           <div id="circle">
+               <div class="feature one">
+                <img src="images/camera.png">
+                <div>
+                    <h1>Camera</h1>
+                    <p>12MP, Wide Angle Lens</p>
+                </div>
+               </div>
+               <div class="feature two">
+                <a href="https://wa.me/442895950083?text=Hi!%20I'm%20interested%20in%20more%20information%20about%20your%20services" target="_blank">
+                <img src="images/whatsapp.png">
+                </a>
+                <div>                    
+                    <h1>WhatsApp</h1>
+                    <p>Start chatting with us on WhatsApp now!</p>    
+                </div>
+               </div>
+               <div class="feature three">
+                <img src="images/display.png">
+                <div>
+                    <h1>Display</h1>
+                    <p>6.5" Mini-Drop Fullscreen</p>
+                </div>
+               </div>
+               <div class="feature four">
+                <img src="images/battery.png">
+                <div>
+                    <h1>Battery Life</h1>
+                    <p>5000mAh, 720H standby</p>
+                </div>
+               </div>
+           </div>
+       </div>
+       
+       <div class="controls">
+           <img src="images/arrow.png" id="up">
+           <h3>Features</h3>
+           <img src="images/arrow.png" id="down">
+       </div>
+
+
+
+   </div>
+
+
+   <script>
+       var circle = document.getElementByID("circle");
+       var up = document.getElementByID("up");
+       var down = document.getElementByID("down");
+
+       var rotatevalue = circle.style.transform;
+       var rotateSum;
+
+       up.onclick = function()
+       {
+           rotateSum = rotatevalue + "rotate(-90deg)";
+           circle.style.transform = rotateSum;
+           rotatevalue = rotateSum;
+       }
+
+       down.onclick=function()
+       {
+           rotateSum=rotatevalue + "rotate(90deg)";
+           circle.style.transform=rotateSum;
+           rotatevalue=rotatesum;
+       }
+       
+   </script>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,300;0,400;0,600;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/chat.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./assets/css/typing.css">
+    <title>Chatbox</title>
+</head>
+<body>
+    <div class="container">
+        <div class="chatbox">
+            <div class="chatbox__support">
+                <div class="chatbox__header">
+                    <div class="chatbox__image--header">
+                        <img src="./images/image.png" alt="image">
+                    </div>
+                    <div class="chatbox__content--header">
+                        <h4 class="chatbox__heading--header">Chat support</h4>
+                        <p class="chatbox__description--header">There are many variations of passages of Lorem Ipsum available</p>
+                    </div>
+                </div>
+                <div class="chatbox__messages">
+                    <div>
+                        <div class="messages__item messages__item--visitor">
+                            Can you let me talk to the support?
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Sure!
+                        </div>
+                        <div class="messages__item messages__item--visitor">
+                            Need your help, I need a developer in my site.
+                        </div>
+                        <div class="messages__item messages__item--operator">
+                            Hi... What is it? I'm a front-end developer, yay!
+                        </div>
+                        <div class="messages__item messages__item--typing">
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                            <span class="messages__dot"></span>
+                        </div>
+                    </div>
+                </div>
+                <div class="chatbox__footer">
+                    <img src="images/icons/emojis.svg" alt="">
+                    <img src="images/icons/microphone.svg" alt="">
+                    <input type="text" placeholder="Write a message...">
+                    <p class="chatbox__send--footer">Send</p>
+                    <img src="./images/icons/attachment.svg" alt="">
+                </div>
+            </div>
+            <div class="chatbox__button">
+                <img src="images/icons/chatbox-icon.svg">
+                <button>button</button>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/Chat.js"></script>
+    <script src="./app.js"></script>
+    
+</body>
+
+</body>
+</html>
