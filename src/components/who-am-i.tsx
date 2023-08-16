@@ -3,7 +3,7 @@ const WhoAmI = () => {
   return (
     <section>
       <h2 className="color-effect p-8 text-center text-4xl font-bold">Wie ben ik?</h2>
-      <h4 className="color-effect text-center text-xl">Subtitle goes here</h4>
+      <h3 className="color-effect text-center text-xl">Subtitle goes here</h3>
       <div className={"flex w-full flex-col items-center p-4 lg:flex-row"}>
         <img className="max-h-[600px] w-[500px]" src="/c-dk.jpeg" alt="" />
         <div className={"flex flex-col md:justify-center gap-4 p-4 md:max-h-[600px] md:overflow-scroll"}>
